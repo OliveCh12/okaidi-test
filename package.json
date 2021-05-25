@@ -1,0 +1,12 @@
+{
+  "name": "okaidi-front-end-test",
+  "version": "1.0.0",
+  "description": "Okaidi Front-End Exercise",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "sass --watch scss/main.scss:css/styles.css --style compressed"
+  },
+  "author": "Olivier Chemla",
+  "license": "ISC"
+}
