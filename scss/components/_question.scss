@@ -16,6 +16,12 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+
+    @include mobile {
+      height: 120px;
+      flex-direction: column;
+      align-items: center;
+    }
   }
   &__infos {
     margin-bottom: 2rem;
@@ -25,6 +31,17 @@
 
     @include mobile {
       flex-direction: column;
+      justify-content: center;
+
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 1rem 0;
+        span {
+          margin: 0.2rem 0;
+        }
+      }
     }
   }
   h3 {
@@ -108,6 +125,7 @@
     padding-left: 0.2rem;
   }
   &__timer {
+    color: $main;
     font-weight: 900;
     font-size: 1.5em;
   }
