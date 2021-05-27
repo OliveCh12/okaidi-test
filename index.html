@@ -5,10 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Pattaya&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Pattaya&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
@@ -22,29 +19,33 @@
             </div>
             <span class="question__index"></span>
           </div>
-          <h3 class="question__title">Start Trivia Quizz by pressing "Start" Button</h3>
+          <h3 class="question__title">Start Trivia Quizz by pressing "Next" Button</h3>
         </div>
         <div class="question__answers">
           <div class="question__answer">
-            <input class="question__checkbox" type="checkbox" id="answer1" />
+            <input class="question__checkbox" type="radio" name="answer" id="answer1" />
             <label class="question__label" for="answer1"></label>
           </div>
           <div class="question__answer">
-            <input class="question__checkbox" type="checkbox" id="answer2" />
+            <input class="question__checkbox" type="radio" name="answer" id="answer2" />
             <label class="question__label" for="answer2"></label>
           </div>
           <div class="question__answer">
-            <input class="question__checkbox" type="checkbox" id="answer3" />
+            <input class="question__checkbox" type="radio" name="answer" id="answer3" />
             <label class="question__label" for="answer3"></label>
           </div>
           <div class="question__answer">
-            <input class="question__checkbox" type="checkbox" id="answer4" />
+            <input class="question__checkbox" type="radio" name="answer" id="answer4" />
             <label class="question__label" for="answer4"></label>
           </div>
         </div>
         <div class="question__footer">
-          <span class="question__timer">0:60</span>
-          <button id="start" type="button" class="button--validate">Validate</button>
+          <span class="question__timer"></span>
+          <span class="question__response"></span>
+          <div>
+            <!-- <button id="start" type="button" class="button button--Secondary">Start</button> -->
+            <button id="next" type="button" class="button button--main">Start Quizz</button>
+          </div>
         </div>
       </div>
     </div>
